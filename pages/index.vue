@@ -7,12 +7,16 @@
 
     <!-- Componentização Extrema Section -->
       <ComponentizacaoSection />
+
+    <!-- Vibe Coding Section -->
+      <VibeCodingSection />
   </div>
 </template>
 
 <script setup>
   import HeroSection from '~/components/sections/HeroSection.vue'
   import ComponentizacaoSection from '~/components/sections/ComponentizacaoSection.vue'
+  import VibeCodingSection from '~/components/sections/VibeCodingSection.vue'
 // Meta tags para SEO
 useHead({
   title: 'NuxtLanding - Landing Page Avançada',
