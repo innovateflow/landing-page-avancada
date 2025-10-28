@@ -13,6 +13,12 @@
 
     <!-- Problema Section -->
       <ProblemaSection />
+
+    <!-- Método Section -->
+      <MetodoSection />
+
+    <!-- Resultado Section -->
+      <ResultadoSection />
   </div>
 </template>
 
@@ -21,6 +27,8 @@
   import ComponentizacaoSection from '~/components/sections/ComponentizacaoSection.vue'
   import VibeCodingSection from '~/components/sections/VibeCodingSection.vue'
   import ProblemaSection from '~/components/sections/ProblemaSection.vue'
+  import MetodoSection from '~/components/sections/MetodoSection.vue'
+  import ResultadoSection from '~/components/sections/ResultadoSection.vue'
 // Meta tags para SEO
 useHead({
   title: 'NuxtLanding - Landing Page Avançada',
