@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-4xl h-40 bg-[#2a2a2a] rounded-xl border-2 border-secondary-500 overflow-hidden shadow-2xl">
+  <div class="w-full max-w-4xl h-64 bg-[#2a2a2a] rounded-xl border-2 border-secondary-500 overflow-hidden shadow-2xl">
     <!-- Interface estilo VS Code com borda roxa -->
     <div class="h-full flex flex-col">
       <!-- Header com ícone e Autopilot -->
@@ -37,7 +37,7 @@
         </div>
       </div>
 
-      <!-- Campo de input na parte inferior -->
+      <!-- Campo de input -->
       <div class="bg-[#2a2a2a] p-4 border-t border-gray-700">
         <div class="flex items-center space-x-4">
           <div class="flex items-center space-x-3 text-gray-400">
@@ -50,6 +50,21 @@
           <div class="w-8 h-8 bg-gray-600 rounded flex items-center justify-center">
             <div class="w-4 h-4 border border-gray-400 rounded-sm"></div>
           </div>
+        </div>
+      </div>
+
+      <!-- Área de resposta/geração de código -->
+      <div class="bg-[#1e1e1e] p-4 border-t border-gray-700">
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="w-6 h-6 bg-secondary-500 rounded-lg flex items-center justify-center">
+            <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+          </div>
+          <span class="text-secondary-500 text-sm font-medium animate-pulse">● Gerando código...</span>
+        </div>
+        
+        <!-- Barra de progresso -->
+        <div class="w-full bg-gray-700 rounded-full h-1">
+          <div class="bg-secondary-500 h-1 rounded-full animate-progress" style="width: 65%;"></div>
         </div>
       </div>
     </div>
@@ -79,6 +94,16 @@ defineProps({
 
 .animate-blink {
   animation: blink 1s ease-in-out infinite;
+}
+
+/* Animação da barra de progresso */
+@keyframes progress {
+  0% { width: 0%; }
+  100% { width: 65%; }
+}
+
+.animate-progress {
+  animation: progress 3s ease-out infinite;
 }
 
 /* Sombra do componente */
