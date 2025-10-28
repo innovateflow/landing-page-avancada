@@ -1,0 +1,24 @@
+<template>
+  <div class="min-h-screen" style="background: linear-gradient(180deg, #020618 0%, #021B23 50%, #01A767 100%);">
+    <!-- Header -->
+
+    <!-- Hero Section -->
+      <HeroSection />
+
+    <!-- Componentização Extrema Section -->
+      <ComponentizacaoSection />
+  </div>
+</template>
+
+<script setup>
+  import HeroSection from '~/components/sections/HeroSection.vue'
+  import ComponentizacaoSection from '~/components/sections/ComponentizacaoSection.vue'
+// Meta tags para SEO
+useHead({
+  title: 'NuxtLanding - Landing Page Avançada',
+  meta: [
+    { name: 'description', content: 'Uma landing page moderna construída com Nuxt 4 e Tailwind CSS' },
+    { name: 'keywords', content: 'nuxt, tailwind, landing page, vue, typescript' }
+  ]
+})
+</script>
