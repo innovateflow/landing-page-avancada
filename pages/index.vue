@@ -19,6 +19,9 @@
 
     <!-- Resultado Section -->
       <ResultadoSection />
+
+    <!-- Possibilidades Section -->
+      <PossibilidadesSection />
   </div>
 </template>
 
@@ -29,6 +32,7 @@
   import ProblemaSection from '~/components/sections/ProblemaSection.vue'
   import MetodoSection from '~/components/sections/MetodoSection.vue'
   import ResultadoSection from '~/components/sections/ResultadoSection.vue'
+  import PossibilidadesSection from '~/components/sections/PossibilidadesSection.vue'
 // Meta tags para SEO
 useHead({
   title: 'NuxtLanding - Landing Page Avançada',
