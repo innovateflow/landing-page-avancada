@@ -31,6 +31,15 @@
 
     <!-- Checkout Section -->
       <CheckoutSection />
+
+    <!-- FAQ Section -->
+      <FaqSection />
+
+    <!-- Footer Section -->
+      <FooterSection />
+
+    <!-- WhatsApp Button -->
+    <WhatsAppButton telefone="5511951665405" />
   </div>
 </template>
 
@@ -44,7 +53,10 @@
   import PossibilidadesSection from '~/components/sections/PossibilidadesSection.vue'
   import ConteudoCursoSection from '~/components/sections/ConteudoCursoSection.vue'
   import DepoimentosSection from '~/components/sections/DepoimentosSection.vue'
+  import FaqSection from '~/components/sections/FaqSection.vue'
   import CheckoutSection from '~/components/sections/CheckoutSection.vue'
+  import FooterSection from '~/components/sections/FooterSection.vue'
+  import WhatsAppButton from '~/components/ui/WhatsAppButton.vue'
 // Meta tags para SEO
 useHead({
   title: 'NuxtLanding - Landing Page Avançada',
