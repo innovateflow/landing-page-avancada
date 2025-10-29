@@ -28,6 +28,9 @@
 
     <!-- Depoimentos Section -->
       <DepoimentosSection />
+
+    <!-- Checkout Section -->
+      <CheckoutSection />
   </div>
 </template>
 
@@ -41,6 +44,7 @@
   import PossibilidadesSection from '~/components/sections/PossibilidadesSection.vue'
   import ConteudoCursoSection from '~/components/sections/ConteudoCursoSection.vue'
   import DepoimentosSection from '~/components/sections/DepoimentosSection.vue'
+  import CheckoutSection from '~/components/sections/CheckoutSection.vue'
 // Meta tags para SEO
 useHead({
   title: 'NuxtLanding - Landing Page Avançada',
